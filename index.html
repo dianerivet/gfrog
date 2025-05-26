@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>G-FROG – Fibre Optique en Géosciences</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: #f7fbfd;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #0e88a9 0%, #3dc1b2 100%);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.2rem;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .illustration {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto 1.5rem auto;
+      max-width: 500px;
+    }
+    section {
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px #0001;
+      padding: 2rem;
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin: 2rem 0 1rem 0;
+    }
+    .logos img {
+      height: 70px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 8px;
+      box-shadow: 0 1px 6px #0002;
+      transition: transform 0.2s;
+    }
+    .logos img:hover {
+      transform: scale(1.08) rotate(-2deg);
+      box-shadow: 0 4px 16px #0002;
+    }
+    @media (max-width: 600px) {
+      .illustration { max-width: 90vw; }
+      section { padding: 1rem; }
+      .logos img { height: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>G-FROG</h1>
+    <div class="subtitle">
+      Groupement Français de Recherche pour la mesure sur Fibre Optique en Géosciences
+    </div>
+    <div>
+      <strong>DAS, Sismologie, Géosciences</strong>
+    </div>
+  </header>
+
+  <div class="illustration">
+    <!-- SVG stylisé représentant la fibre optique, la sismologie et la géoscience -->
+    <svg width="100%" height="180" viewBox="0 0 500 180" fill="none">
+      <!-- Fibre optique : faisceau lumineux -->
+      <ellipse cx="80" cy="90" rx="64" ry="18" fill="#3dc1b2" opacity="0.2"/>
+      <rect x="55" y="80" width="100" height="20" rx="10" fill="#3dc1b2" opacity="0.58"/>
+      <path d="M100 90 Q180 60 270 110 Q310 130 420 70" stroke="#0e88a9" stroke-width="5" fill="none"/>
+      <!-- Sismogramme stylisé -->
+      <polyline points="120,150 135,120 145,140 155,100 170,130 180,110 195,140 210,120 225,150"
+        fill="none" stroke="#e67e22" stroke-width="3" />
+      <!-- Montagnes : géosciences -->
+      <polygon points="270,170 310,110 345,160 370,130 410,170" fill="#aac7e7" opacity="0.7"/>
+      <polygon points="320,170 350,125 370,155 390,140 420,170" fill="#7dc7a9" opacity="0.6"/>
+      <!-- Petits points pour "fibre" -->
+      <circle cx="420" cy="70" r="8" fill="#3dc1b2"/>
+      <circle cx="420" cy="70" r="15" fill="#3dc1b2" opacity="0.12"/>
+      <circle cx="420" cy="70" r="22" fill="#3dc1b2" opacity="0.07"/>
+      <!-- Legende -->
+      <text x="40" y="50" font-size="16" fill="#0e88a9" font-family="Arial" opacity="0.7">Fibre optique</text>
+      <text x="125" y="115" font-size="14" fill="#e67e22" font-family="Arial" opacity="0.7">Sismologie</text>
+      <text x="330" y="170" font-size="14" fill="#176685" font-family="Arial" opacity="0.7">Géosciences</text>
+    </svg>
+  </div>
+
+  <section>
+    <h2>À propos</h2>
+    <p>
+      Le <strong>G-FROG</strong> vise à structurer et rendre visible la communauté des chercheurs et praticiens utilisant les fibres optiques pour des applications en géosciences (Terre solide, surfaces et interfaces, océan-atmosphère, etc.).<br>
+      Notre réseau favorise l’innovation, la diffusion des connaissances et la promotion des technologies fibre optique (DAS, DTS, etc.) dans la recherche et l’observation.
+    </p>
+    <h3>Partenaires</h3>
+    <div class="logos">
+      <!-- Remplace les liens # par les chemins réels de tes logos -->
+      <a href="https://www.epos-france.fr/" title="EPOS France" target="_blank">
+        <img src="img/epos_france_logo.png" alt="EPOS France">
+      </a>
+      <a href="https://formaterre.fr/" title="Formaterre" target="_blank">
+        <img src="img/formaterre_logo.png" alt="Formaterre">
+      </a>
+      <a href="https://geoazur.oca.eu/" title="Observatoire de la Côte d'Azur" target="_blank">
+        <img src="img/oca_logo.png" alt="Observatoire de la Côte d'Azur">
+      </a>
+    </div>
+    <p style="text-align:center;font-size:0.98em;color:#666;">
+      Logos partenaires : EPOS France, Formaterre, Observatoire de la Côte d'Azur
+    </p>
+  </section>
+</body>
+</html>
